@@ -9,13 +9,16 @@ args = parser.parse_args()
 
 
 def main():
-    print("We are in the main def now...Hello...")
+    print("We are in the main def now...Hello...\n")
+    print("import array_loops_n_more --> Imports all modules as array_loops_n_more.modue_name().\n")
     import array_loops_n_more
+    print("from arrays_example import * --> Imports all modules from arrays_example into this namespace")
+    print("\tFor example instead of arrays_example.simple_arrays() just use simple_arrays()\n")
     import arrays_example
     import dict_example
 
     if args.arrays1:
-        arrays_example.simple_arrays()
+        simple_arrays()
     if args.arrays2:
         array_loops_n_more.demo_looping_arrays()
     if args.dict1:
